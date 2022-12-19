@@ -173,10 +173,14 @@ async function run() {
 
 run().catch(console.dir);
 
+app.use("/", (req, res) => {
+    res.json({ message: "Hello From Express App" });
+});
 
-app.get('/', (req, res) => {
-    res.send('Hello from manufacturer server side!')
-})
+
+// app.get('/', (req, res) => {
+//     res.send('Hello from manufacturer server side!')
+// })
 
 app.listen(port, () => {
     console.log(`manufacturer app listening on port ${port}`)
