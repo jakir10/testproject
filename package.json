@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "engin": {
+  "engines": {
     "node": "14.x"
   },
   "scripts": {
